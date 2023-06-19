@@ -70,7 +70,21 @@ header{
 
 /* フォーム */
 #name{
-  box-sizing: 30%;
+  width:70%;
+}
+
+#e-mail{
+  width:70%;
+}
+
+#message{
+  width:70%;
+  height:50px;
+}
+
+#submit{
+  text-align: center;
+  padding: 15px 0;
 }
 
 
@@ -87,6 +101,8 @@ header{
 
 footer{
   text-align: center;
+  background-color: black;
+  color: aliceblue;
 }
 
 @media screen and (max-width: 600px){
@@ -99,6 +115,16 @@ footer{
     text-align: center;
   }
 
+.works-img{
+  text-align: center;
+}
 
+  .img{
+  width:60%;
+}
+
+.news{
+  font-size:20px;
+}
 
 }
