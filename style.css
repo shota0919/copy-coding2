@@ -1,0 +1,104 @@
+
+html{
+  max-width: 960px;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home{
+  font-size: 25px;
+
+}
+
+header{
+  align-items: center;
+}
+
+.menu{
+  text-align: right;
+  margin: 20px 10px;
+}
+
+.menu > a{
+  margin: 0 15px;
+}
+
+.icon{
+ width: 20px;
+}
+
+#mainvisual{
+  width:100%;
+  max-width: 1920px;
+}
+
+.sec-tittle{
+  text-align: center;
+}
+
+.profile{
+  list-style: none;
+}
+
+.works-img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.img{ 
+  width: 25%;
+  margin: 10px 10px;
+}
+
+/* ニュース */
+
+
+#border-top{
+  border-top: solid  3px #c8c8c8;
+}
+.border-bottom{
+  border-bottom: solid  3px #c8c8c8;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* フォーム */
+#name{
+  box-sizing: 30%;
+}
+
+
+
+ 
+
+/* label{
+  display: flex;
+  flex-flow: column;
+  justify-content:space-between;
+  width:80%;
+  
+} */
+
+footer{
+  text-align: center;
+}
+
+@media screen and (max-width: 600px){
+
+  .home{
+    text-align: center;
+  }
+
+  .menu{
+    text-align: center;
+  }
+
+
+
+}
