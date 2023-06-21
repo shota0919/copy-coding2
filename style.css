@@ -1,127 +1,185 @@
 
 html{
-  max-width: 960px;
+  margin: 0;
+  padding: 0;
 }
+
 li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
-}
-
-.home{
-  font-size: 25px;
-
-}
-
-header{
-  align-items: center;
-}
-
-.menu{
-  text-align: right;
-  margin: 20px 10px;
-}
-
-.menu > a{
-  margin: 0 15px;
-}
-
-.icon{
- width: 20px;
-}
-
-#mainvisual{
-  width:100%;
-  max-width: 1920px;
+  color: black;
 }
 
 .sec-tittle{
   text-align: center;
 }
 
-.profile{
-  list-style: none;
+/* ヘッダー */
+
+.home{
+  font-size: 25px;
+
 }
 
-.works-img{
+#header{
+ display: flex;
+ max-width: 960px;
+ justify-content: space-between;
+ align-items: center;
+ margin: 0 auto;
+ padding: 0.4%;
+ height:270px;
+}
+
+#header nav > ul{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
-.img{ 
-  width: 25%;
-  margin: 10px 10px;
+#header nav > ul >li{
+  margin-left: 30px;
+}
+
+.icon{
+ width: 20px;
+}
+
+/* メイン写真 */
+
+#mainvisual{
+  width:100%;
+  max-width: 1920px;
+}
+#mainvisual > img{
+  width: 100%;
+  height: 450px;
+  max-width: 1920px;
+  object-fit: cover;
+}
+
+/* aboutセクション */
+.sec-tittle{
+  margin:50px 0;
+}
+
+#about{
+  font-size: 0.9rem;
+}
+
+#about li:first-child {
+  margin-bottom: 30px;
+}
+
+/* worksセクション */
+
+#works >ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#works >ul >li{
+  width: 31%;
+}
+
+#works >ul >li >img{
+  width:100%;
 }
 
 /* ニュース */
-
+.wrapper{
+  max-width: 960px;
+  padding: 0.4%;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
+}
+#news >dl{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
 
 #border-top{
-  border-top: solid  3px #c8c8c8;
+  border-top: solid  1px #c8c8c8;
+  padding: 10px 0;
 }
 .border-bottom{
-  border-bottom: solid  3px #c8c8c8;
-  display: flex;
-  flex-wrap: nowrap;
+  border-bottom: solid  1px #c8c8c8;
+  padding: 10px 0;
 }
 
 /* フォーム */
-#name{
-  width:70%;
+
+ #contact> form >dl{
+  display:flex;
+  flex-wrap: wrap;
 }
 
-#e-mail{
-  width:70%;
+form > dl>dt{
+  width: 15%;
+}
+
+form > dl> dd  {
+  width: 85%;
+  margin-bottom: 10px;
+  margin-left:0;
+}
+
+form > dl > dd>input{
+  width: 100%;
+  padding: 10px;
+  border: solid 1px #c8c8c8;
 }
 
 #message{
-  width:70%;
-  height:50px;
+  width:100%;
+  height: 10rem;
+  padding: 10px;
+  border: solid 1px #c8c8c8;
 }
+
 
 #submit{
   text-align: center;
-  padding: 15px 0;
 }
 
-
-
- 
-
-/* label{
-  display: flex;
-  flex-flow: column;
-  justify-content:space-between;
-  width:80%;
-  
-} */
+#submit > input{
+  width: 200px;
+  background-color: #24292e;
+  color: #fff;
+  padding: 15px 0;
+}
 
 footer{
   text-align: center;
   background-color: black;
   color: aliceblue;
+  font-size: 0.5rem;
+  padding:10px 20px;
 }
 
 @media screen and (max-width: 600px){
 
-  .home{
-    text-align: center;
+  #header{
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+    height: auto;
+    display: flex;
+    align-items: center;
   }
 
-  .menu{
-    text-align: center;
-  }
-
-.works-img{
-  text-align: center;
+#works >ul{
+ flex-direction: column;
 }
 
-  .img{
-  width:60%;
+#works > ul >li{
+  width: 100%;
 }
+
+  
 
 .news{
   font-size:20px;

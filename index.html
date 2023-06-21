@@ -7,26 +7,34 @@
        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
+        <header id="header">
+            <a href="index.html"><h1 class="home"><a href="index.html">My Work</a></h1>
             <nav>
-                <div>
-                <a href="a"><h1 class="home">My Work</h1></a>
-                </div>
-                <div class="menu">
-                    <a href="#about">About</a>
-                    <a href="#works">Work</a>
-                    <a href="#news">News</a>
-                    <a href="#contact">Contact</a>
-                    <a href="https://www.instagram.com/" ><img class="icon" src="images/icon-instagram.png"></a>
-                </div>
+                <ul>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#works">Work</a>
+                    </li>
+                    <li>
+                        <a href="#news">News</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" ><img class="icon" src="images/icon-instagram.png"></a>
+                    </li>                  
+                </ul>
             </nav>
         </header>
         <main>
-            <article>
                 <div id="mainvisual">
                     <img src="images/mainvisual-pc.jpg">
                 </div>
-                <section class="about">
+
+                <section id="about" class="wrapper">
                     <h2 class="sec-tittle">About</h2>
                     <ul class="profile">
                         <li>Xxxxx Ashley</li>
@@ -34,35 +42,33 @@
                         <li>tel: 000-0000-0000</li>
                         <li>url: www.xxxxxx.jp</li>
                         <li>mail: xxx@xxxxxx.jp</li>
-                        <li>プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+                        <p>プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                     </ul>
                 </section>
-                <section class="works">
+                <section id="works" class="wrapper">
                     <h2 class="sec-tittle">Works</h2>
-                    <div class="Works-img">
                     <ul>
                         <li>
-                            <img src="images/works1.jpg" class="img">
+                            <img src="images/works1.jpg">
                         </li>
                         <li>
-                            <img src="images/works2.jpg" class="img">
+                            <img src="images/works2.jpg">
                         </li>
                         <li>
-                            <img src="images/works3.jpg" class="img">
+                            <img src="images/works3.jpg">
                         </li>
                         <li>
-                            <img src="images/works4.jpg" class="img">
+                            <img src="images/works4.jpg">
                         </li>
                         <li>
-                            <img src="images/works5.jpg" class="img">
+                            <img src="images/works5.jpg">
                         </li>
                         <li>
-                            <img src="images/works6.jpg" class="img">
+                            <img src="images/works6.jpg">
                         </li>
                     </ul>
-                </div>
                 </section>
-                <section class="news">
+                <section id="news" class="wrapper">
                     <h2 class="sec-tittle">News</h2 class="sec-tittle">
                     <div id="news">
                     <dl class="border-bottom" id="border-top">
@@ -72,38 +78,37 @@
                     <dl class="border-bottom">
                         <dt>2020.XX.XX</dt>
                         <dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
-                    </dl class="border-bottom">
+                    </dl>
                     <dl class="border-bottom">
                         <dt>2019.XX.XX</dt>
                         <dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト
                         </dd>
-                    </dl class="border-bottom">
+                    </dl>
                     <dl class="border-bottom">
                         <dt>2019.XX.XX</dt>
                         <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
                     </dl>
-                    <dl class="border-bottom">
+                    <dl>
                         <dt>2019.XX.XX</dt>
                         <dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
                     </dl>
                     </div>
                 </section>
-                <section class="Contact">
+                
+                <section id="contact" class="wrapper">
                     <h2 class="sec-tittle">Contact</h2>
                     <form>
-                       
-                        <label>NAME</label> 
-                        <input type="text" id="name">
-                        <br>
-                        <label>E-mail</label> 
-                        <input type="text" id="e-mail">
-                        <br>
-                     
-                        <label>MESSAGE</label> 
-                        <textarea id="message"></textarea> 
-                        
-                        <div id="submit"><input type="submit" value="送信"></div>
-                   
+                        <dl>
+                            <dt><label>NAME</label></dt>
+                            <dd><input type="text" id="name"></dd>
+                            <dt><label>E-mail</label></dt>
+                            <dd><input type="text" id="e-mail"></dd>
+                            <dt><label>MESSAGE</label></dt>
+                            <dd><textarea id="message"></textarea></dd>
+                        </dl>
+                        <div id="submit">
+                            <input type="submit" value="送信">
+                        </div>                  
                     </form>
                 </section>
             </article>
